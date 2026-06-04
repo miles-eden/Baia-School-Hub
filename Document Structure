@@ -1,2 +1,116 @@
-<!Doctype html>
-<Head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baia School Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">🎓 Baia School Hub</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#school-life">School Life</a>
+            <a href="#lost-found">Lost & Found</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#events">Events</a>
+            <a href="#achievements">Achievements</a>
+        </nav>
+        <button class="search-btn">Search Tools</button>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to the School Interactive Hub</h1>
+            <p>Your all‑in‑one place for learning, tools, and student life.</p>
+            <div class="hero-buttons">
+                <button class="primary-btn">Start Studying</button>
+                <button class="secondary-btn">Anonymous Feedback</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Add your hero image here -->
+        </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="dashboard">
+        <div class="widget clock">🕒 <span id="clock">00:00:00</span></div>
+        <div class="widget schedule">📚 Today’s Schedule</div>
+        <div class="widget assignments">📝 Assignments</div>
+        <div class="widget quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>GPA Calculator</li>
+                <li>Study Timer</li>
+                <li>Flashcards</li>
+                <li>Lost & Found</li>
+                <li>Event Calendar</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- POPULAR TOOLS GRID -->
+    <section class="tools">
+        <h2>Popular Tools</h2>
+        <div class="tool-grid">
+            <div class="tool-card">Homework Helper</div>
+            <div class="tool-card">Study Tips</div>
+            <div class="tool-card">GPA Calculator</div>
+            <div class="tool-card">Study Planner</div>
+            <div class="tool-card">Lost & Found</div>
+            <div class="tool-card">Feedback Collector</div>
+            <div class="tool-card">Clubs Directory</div>
+            <div class="tool-card">Events Calendar</div>
+        </div>
+    </section>
+
+    <!-- INTERACTION SECTION -->
+    <section class="interaction">
+        <div class="poll">📊 Daily Poll</div>
+        <div class="anonymous-box">🕶️ Anonymous Opinion Box</div>
+        <div class="voice-meter">📈 Student Voice Meter</div>
+    </section>
+
+    <!-- EVENTS PREVIEW -->
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-slider">
+            <div class="event-card">Event 1</div>
+            <div class="event-card">Event 2</div>
+            <div class="event-card">Event 3</div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement-grid">
+            <div class="achievement-card">Student Highlight</div>
+            <div class="achievement-card">Teacher Recognition</div>
+            <div class="achievement-card">Sports Win</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 School Interactive Hub — Made by Students for Students</p>
+    </footer>
+
+    <script>
+        // Live Clock Script
+        function updateClock() {
+            const now = new Date();
+            document.getElementById("clock").textContent =
+                now.toLocaleTimeString();
+        }
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>
